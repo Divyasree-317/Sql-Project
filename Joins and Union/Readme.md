@@ -1,26 +1,30 @@
-SQL Operations on Country and Persons Tables
+# Join and Unions
 
-Overview :
+* Objective
 
-This repository demonstrates various SQL operations on Country and Persons tables, showcasing join operations, distinct value extraction, duplicate listing, and data manipulation.
+This assignment showcasing the use of SQL for Join and Union .
 
-Tables Used
-Country Table
-Columns: CountryId (Primary Key), CountryName
-Persons Table
-Columns: PersonId (Primary Key), PersonName, CountryId (Foreign Key), Rating
-Operations
-Join Operations
+SQL Joins Define:
 
-INNER JOIN: Retrieves records where there is a match between the CountryId in both tables.
-LEFT JOIN: Retrieves all records from Persons and matches from Country. Unmatched rows will have NULL for CountryName.
-RIGHT JOIN: Retrieves all records from Country and matches from Persons. Unmatched rows will have NULL for PersonName.
-Distinct Country Names
+SQL joins are used to retrieve data from two or more tables based on a related column. They combine rows from these tables into a single result set.
 
-Lists unique country names across both tables using a UNION query.
-All Country Names with Duplicates
+Types of Joins:
 
-Lists all country names, including duplicates, from both tables using UNION ALL.
-Rounding Ratings
+INNER JOIN: Returns rows that have matching values in both tables.
+LEFT JOIN : Returns all rows from the left table and matching rows from the right table. If no match, NULLs are returned for the right table.
+RIGHT JOIN : Returns all rows from the right table and matching rows from the left table. If no match, NULLs are returned for the left table.
 
-Rounds the Rating column in the Persons table to the nearest integer using the ROUND function.
+SQL Union Define:
+
+The SQL UNION operator is used to combine the results of two or more SELECT statements into a single result set. It removes duplicate rows by default.
+
+Consider the Country table and Persons table that you created earlier and perform the following: 
+
+(1)Perform inner join, Left join, and Right join on the tables.
+
+(2)List all distinct country names from both the Country and Persons tables. 
+
+(3)List all country names from both the Country and Persons tables, including duplicates. 
+
+(4)Round the ratings of all persons to the nearest integer in the Persons table.
+
