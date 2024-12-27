@@ -1,5 +1,7 @@
 SQL Operations on Country and Persons Tables
-Overview
+
+Overview :
+
 This repository demonstrates various SQL operations on Country and Persons tables, showcasing join operations, distinct value extraction, duplicate listing, and data manipulation.
 
 Tables Used
